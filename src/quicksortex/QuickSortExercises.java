@@ -43,6 +43,10 @@ public class QuickSortExercises {
         return curr;
     }
 
+    private static void medianOfThreeQuickSort( int[] arr, int low, int high ) {
+
+    }
+
     private static void randomizedQuickSort( int[] arr, int low, int high ) {
         if( low >= high ) {
             return;
@@ -55,6 +59,11 @@ public class QuickSortExercises {
     }
 
     private static int kth( int arr[], int low, int high, int k ) {
+        /*
+            while( pp != k - 1 ) {
+
+            }
+         */
         if( low >= high ) {
             return -1;
         }
