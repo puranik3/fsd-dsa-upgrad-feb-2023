@@ -21,9 +21,18 @@ public class LinearSearch {
         int idx;
 
         idx = linearSearch( arr, 10 ); // 5
-        System.out.println( "position of 10 = " + idx );
+        if( idx == -1 ) {
+            System.out.println( "Number 10 is not present" );
+        } else {
+            System.out.println("position of 10 = " + idx);
+        }
 
         idx = linearSearch( arr, 13 ); // -1 (means key is not an item in the array)
-        System.out.println( "position of 13 = " + idx );
+
+        if( idx == -1 ) {
+            System.out.println( "Number 13 is not present" );
+        } else {
+            System.out.println("position of 13 = " + idx);
+        }
     }
 }
