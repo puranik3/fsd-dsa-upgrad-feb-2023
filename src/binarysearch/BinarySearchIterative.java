@@ -2,8 +2,7 @@ package binarysearch;
 
 public class BinarySearchIterative {
     private static int binarySearchWorker( int arr[], int key, int low, int high ) {
-        // if array has some item(s)
-
+        // as long as the portion of the array we are searching within has some item(s)...
         while( low <= high ) {
             // find out the mid index
             int mid = low + ( high - low ) / 2; // ( low + high ) / 2
@@ -12,11 +11,11 @@ public class BinarySearchIterative {
                 return mid;
             }
 
-            // they key must be in the right side of the array
+            // they ke must be in the right side of the array
             if( arr[mid] < key ) {
                 // for the next iteration of the while loop, we reset low
                 low = mid + 1;
-                // high = high;
+                // high = high; // no change is needed for high
             }
 
             if( arr[mid] > key ) {
@@ -25,6 +24,7 @@ public class BinarySearchIterative {
             }
         }
 
+        // if we have run out of items in the array, the key is not present in the array, and we indicate by returning -1 for index
         return -1;
     }
 
