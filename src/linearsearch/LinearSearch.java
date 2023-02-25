@@ -5,8 +5,14 @@ public class LinearSearch {
         // loop through the numbers in arr (for loop)
             // we compare the current element in the for loop (arr[i]) with the key
                 // if it is equal, we return the current index, i
+        for( int i = 0; i < arr.length; i++ ) {
+            if( arr[i] == key ) {
+                return i;
+            }
+        }
 
         // return -1
+        return -1;
     }
 
     public static void main(String[] args) {
@@ -15,6 +21,9 @@ public class LinearSearch {
         int idx;
 
         idx = linearSearch( arr, 10 ); // 5
-        linearSearch( arr, 13 ); // -1 (means key is not an item in the array)
+        System.out.println( "position of 10 = " + idx );
+
+        idx = linearSearch( arr, 13 ); // -1 (means key is not an item in the array)
+        System.out.println( "position of 13 = " + idx );
     }
 }
