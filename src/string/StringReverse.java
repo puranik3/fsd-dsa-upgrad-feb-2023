@@ -2,7 +2,13 @@ package string;
 
 public class StringReverse {
     private static String reverse(String str) {
-        // 10:30 we will discuss
+        String reverseStr = "";
+
+        for( int i = str.length() - 1; i >= 0; i-- ) {
+            reverseStr = reverseStr + str.charAt( i );
+        }
+
+        return reverseStr;
     }
 
     public static void main(String[] args) {
