@@ -1,5 +1,7 @@
 package string;
 
+import java.util.Arrays;
+
 public class StringClassDemo {
     public static void main(String[] args) {
         String str = new String( "Hello world" );
@@ -49,5 +51,18 @@ public class StringClassDemo {
         System.out.println( "email = " + email );
         System.out.println( "trimmedEmail = " + trimmedEmail );
         System.out.println( "**************" );
+
+        System.out.println( "*** toCharArray() ***" );
+        char strChars[] = "Hello".toCharArray();
+
+        for( i = 0; i < strChars.length; i++ ) {
+            System.out.println( strChars[i] );
+        }
+
+        for( i = 0; i < str.length(); i++ ) {
+            System.out.println( str.charAt( i ) );
+        }
+
+
     }
 }
