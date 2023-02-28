@@ -1,7 +1,7 @@
 package string;
 
-public class StringReverse {
-    private static String reverse(String str) {
+class StringReverse {
+    public static String reverse(String str) {
         String reverseStr = "";
 
         for( int i = str.length() - 1; i >= 0; i-- ) {
