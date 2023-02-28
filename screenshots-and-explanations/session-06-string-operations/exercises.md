@@ -1,0 +1,1 @@
+1. List out all matches for a substring using indexOf() in a loop
