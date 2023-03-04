@@ -53,7 +53,11 @@ public class SmallestWindow {
     }
 
     public static void main(String[] args) {
-        String str = "aabcbcdbca";
+        String str = "aabcbcdbca"; // in string pool
+
+        // str.equals( "aabcbcdbca" ) // in string pool -> the string from the previous line is used again
+        new String( "aabcbcdbca" ); // NOT in string pool
+
         String smallestWindowStr = smallestWindow( str );
         System.out.println( smallestWindowStr ); // "dbca"
 
