@@ -21,7 +21,9 @@ __Examples__
 - `{ 2 * ( 3 + 4 + [ 5 / 6 ] ) } * ( 7 + 8 )` is well-formed
 - `{ 2 * ( 3 + 4 + [ 5 / 6 ] ) } * ( 7 + 8 ] + 9 )` is __NOT__ well-formed
 
-__Hint__: Go through the characters one-by-one. If the character is an opening bracket (`{` or `(` or `[`) push it to the stack. If a closing bracket is encountered, then the top of the stack must be the __matching__ opening bracket in order for the expression to be well-formed.
+__Hints__:
+1. Go through the characters one-by-one. If the character is an opening bracket (`{` or `(` or `[`) push it to the stack. If a closing bracket is encountered, then the top of the stack must be the __matching__ opening bracket in order for the expression to be well-formed.
+2. Further pop the opening bracket when a matching closing bracket is found. If the given expression is well-formed, the stack will be empty when the end of the string is reached.
 
 __References__
 - https://www.techiedelight.com/check-given-expression-balanced-expression-not/
