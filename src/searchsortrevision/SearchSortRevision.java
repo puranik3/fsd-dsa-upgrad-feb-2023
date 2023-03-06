@@ -1,3 +1,5 @@
+package searchsortrevision;
+
 public class SearchSortRevision {
     private static int sqrt( int num ) {
         int low = 1, high = num, mid = 0;

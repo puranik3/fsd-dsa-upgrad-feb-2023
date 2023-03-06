@@ -52,14 +52,51 @@ public class SmallestWindow {
         return smallestWindowStr;
     }
 
+    // Alternative solution using same idea but an array instead of a Map - https://www.geeksforgeeks.org/smallest-window-contains-characters-string/
+    private static String smallestWindowEfficient( String str ) {
+        // map maintains the index at which a character was found the last time
+        Map<Character, Integer> map = new HashMap();
+        int cwStart = 0, swStart = 0, swEnd = 0;
+
+        for( int i = 0; i < str.length(); i++ ) {
+            char ch = str.charAt( i );
+
+            // expand the window if this is the first time a character is encountered...
+            if( map.get( ch ) == null ) {
+                map.put( ch, i );
+                swEnd = i;
+            } else { // ...else simply update the last found index for a character, and update current window based on the previous window
+                map.put(ch, i);
+
+                // move cwStart to the right as long as the leading characters do not appear later on in the current window
+                while (map.get(str.charAt(cwStart)) != cwStart) {
+                    cwStart++;
+                }
+
+                // change smallest window to current window if needed
+                if (i - cwStart < swEnd - swStart) {
+                    swStart = cwStart;
+                    swEnd = i;
+                }
+            }
+        }
+
+        return str.substring( swStart, swEnd + 1 );
+    }
+
     public static void main(String[] args) {
         String str = "aabcbcdbca"; // in string pool
 
         // str.equals( "aabcbcdbca" ) // in string pool -> the string from the previous line is used again
         new String( "aabcbcdbca" ); // NOT in string pool
 
-        String smallestWindowStr = smallestWindow( str );
-        System.out.println( smallestWindowStr ); // "dbca"
+        String smallestWindowStr;
+
+        smallestWindowStr = smallestWindow( str );
+        System.out.println( "Smallest window = " + smallestWindowStr ); // "dbca"
+
+        smallestWindowStr = smallestWindowEfficient( str );
+        System.out.println( "Smallest window = " + smallestWindowStr ); // "dbca"
 
         //"hello world wordhelow" // "wordhelow"
     }
