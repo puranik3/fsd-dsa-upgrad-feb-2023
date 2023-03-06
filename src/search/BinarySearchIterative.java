@@ -1,4 +1,4 @@
-package binarysearch;
+package search;
 
 public class BinarySearchIterative {
     private static int binarySearchWorker( int arr[], int key, int low, int high ) {

@@ -1,4 +1,4 @@
-package searchex;
+package searchexercises;
 
 public class OddOneOut {
     // XOR operator - bitwise operator (eXclusive OR)

@@ -1,4 +1,4 @@
-package searchex;
+package searchexercises;
 
 public class ArrayRotations {
     private static int numRotations( int arr[] ) {

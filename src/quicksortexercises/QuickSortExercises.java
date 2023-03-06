@@ -1,4 +1,4 @@
-package quicksortex;
+package quicksortexercises;
 
 import java.util.Arrays;
 import java.util.Random;

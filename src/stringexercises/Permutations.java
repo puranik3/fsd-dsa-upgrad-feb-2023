@@ -1,4 +1,4 @@
-package stringex;
+package stringexercises;
 public class Permutations {
     private static String swap( String str, int x, int y ) {
         char[] charStr = str.toCharArray(); // { 'A', 'B', 'C' }

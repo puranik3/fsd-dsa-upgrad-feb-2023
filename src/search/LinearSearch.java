@@ -1,4 +1,4 @@
-package linearsearch;
+package search;
 
 public class LinearSearch {
     private static int linearSearch( int arr[], int key ) {

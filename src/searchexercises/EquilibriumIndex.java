@@ -1,4 +1,4 @@
-package searchex;
+package searchexercises;
 
 public class EquilibriumIndex {
     private static int getEquilibriumIndex( int arr[] ) {

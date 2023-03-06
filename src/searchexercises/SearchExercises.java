@@ -1,4 +1,4 @@
-package searchex;
+package searchexercises;
 
 public class SearchExercises {
     /**

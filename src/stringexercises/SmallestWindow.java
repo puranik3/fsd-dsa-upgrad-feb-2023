@@ -1,8 +1,7 @@
-package stringex;
+package stringexercises;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class SmallestWindow {
     private static String smallestWindow( String str ) {

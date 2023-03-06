@@ -1,4 +1,4 @@
-package searchex;
+package searchexercises;
 
 public class EquilibriumIndexMithali {
         static int equilibriumIndex( int[]arr ){
