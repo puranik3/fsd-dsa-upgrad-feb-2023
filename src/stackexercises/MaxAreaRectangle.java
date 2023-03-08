@@ -2,10 +2,10 @@ package stackexercises;
 
 public class MaxAreaRectangle {
     private static int maxAreaRectangle( int[] bars ) {
-        int minHeight, maxArea = 0;
+        int minHeight;
+        int maxArea = 0;
 
         for( int start = 0; start < bars.length; start++ ) {
-            maxArea = 0;
             minHeight = bars[start];
 
             for( int end = start; end < bars.length; end++ ) {
