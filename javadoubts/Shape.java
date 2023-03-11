@@ -1,4 +1,4 @@
-package doubtsclearingfeb;
+package javadoubts;
 
 public abstract class Shape {
     private double area;

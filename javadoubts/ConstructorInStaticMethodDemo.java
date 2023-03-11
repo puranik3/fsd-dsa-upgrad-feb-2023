@@ -1,4 +1,4 @@
-package doubtsclearingfeb;
+package javadoubts;
 
 public class ConstructorInStaticMethodDemo {
     public int x;

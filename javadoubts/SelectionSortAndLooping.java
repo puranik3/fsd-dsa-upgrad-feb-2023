@@ -1,4 +1,5 @@
-package doubtsclearingfeb;
+package javadoubts;
+
 public class SelectionSortAndLooping {
     // ascending order sort
     private static void sort( int arr[] ) {

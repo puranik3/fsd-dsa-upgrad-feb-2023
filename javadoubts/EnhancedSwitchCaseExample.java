@@ -1,3 +1,5 @@
+package javadoubts;
+
 public class EnhancedSwitchCaseExample {
     public static void main(String[] args) {
         int discount;
