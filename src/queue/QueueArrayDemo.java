@@ -18,6 +18,7 @@ public class QueueArrayDemo {
             queueArray.enqueue(10);
             queueArray.enqueue(20);
             queueArray.enqueue(30);
+
             queueArray.enqueue(40);
         } catch( Exception exception ) {
             System.out.println( exception.getMessage() );
@@ -46,13 +47,31 @@ public class QueueArrayDemo {
         queueArray.print();
     }
 
+    private static void testDequeueMultipleElements() {
+        // arrange
+        QueueArray queueArray = new QueueArray( 3 );
+
+        queueArray.enqueue( 10 );
+        queueArray.enqueue( 20 );
+
+        // act
+        int data = queueArray.dequeue();
+
+        // assertion
+        System.out.println( "Item which was dequeued = " + data );
+
+        queueArray.print(); // 20 -> null
+
+    }
+
     public static void main(String[] args) {
         testEnqueue();
         testEnqueueWhenQueueIsFull();
+
         testDequeueEmpty();
         testDequeueOneElement();
 
         // EXERCISE: Implement this test
-        // testDequeueMultipleElements();
+        testDequeueMultipleElements();
     }
 }
