@@ -1,7 +1,5 @@
 package queueexercises;
 
-import queue.QueueArray;
-
 import java.util.LinkedList;
 import java.util.Queue;
 

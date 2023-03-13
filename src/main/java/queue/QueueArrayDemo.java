@@ -1,4 +1,6 @@
-package queue;
+package main.java.queue;
+
+import queue.QueueArray;
 
 public class QueueArrayDemo {
     private static void testEnqueue() {

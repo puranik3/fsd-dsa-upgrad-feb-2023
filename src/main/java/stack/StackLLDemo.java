@@ -1,5 +1,7 @@
 package stack;
 
+import stack.StackLL;
+
 public class StackLLDemo {
     private static void testPush() {
         System.out.println( "*** testPush ***" );

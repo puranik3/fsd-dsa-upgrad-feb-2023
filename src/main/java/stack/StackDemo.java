@@ -1,5 +1,7 @@
 package stack;
 
+import stack.StackArray;
+
 public class StackDemo {
     private static void testPeek() {
         StackArray stackArray = new StackArray( 5 );

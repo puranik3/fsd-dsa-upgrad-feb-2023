@@ -1,5 +1,7 @@
 package stackexercises;
 
+import stackexercises.MinStack;
+
 public class MinStackDemo {
     public static void main(String[] args) {
         MinStack st = new MinStack();

@@ -1,5 +1,7 @@
 package queueexercises;
 
+import queueexercises.QueueUsingStack;
+
 public class QueueUsingStackDemo {
     private static void testEnqueueAndDeque() {
         QueueUsingStack queue = new QueueUsingStack();
