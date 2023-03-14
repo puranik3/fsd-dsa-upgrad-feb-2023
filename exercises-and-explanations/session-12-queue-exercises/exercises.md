@@ -45,7 +45,7 @@ At 2nd time frame:
 {2, 0, 2, 2, 2}
 {2, 0, 0, 2, 2}
 ```
-2. Input for which sone orange will remain fresh
+2. Input for which some orange will remain fresh
 ```
 Input:  arr[][C] = { {2, 1, 0, 2, 1}, {0, 0, 1, 2, 1}, {1, 0, 0, 2, 1}}
 Output: -1
